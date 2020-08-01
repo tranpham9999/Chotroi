@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Dangnhap">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibGoback"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:onClick="onClick">
+        </ImageButton>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilUsername_Dangnhap"
+            android:theme="@style/EditTextHint">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUsername_Dangnhap"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorTextLight"
+                android:textColor="@color/colorTextLight">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilPassword_Dangnhap"
+            android:theme="@style/EditTextHint"
+            android:layout_below="@+id/tilUsername_Dangnhap"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword_DangNhap"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorTextLight"
+                android:textColor="@color/colorTextLight">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btQuenmatkhau"
+            android:text="Quên mật khẩu?"
+            android:layout_below="@+id/tilPassword_Dangnhap"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_light_background"
+            android:background="@android:color/transparent">
+
+        </Button>
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btQuenmatkhau"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="#FF6666"
+            android:textAllCaps="true"
+            android:text="log in">
+
+        </Button>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loading_login"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_below="@+id/btLogin"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+</RelativeLayout>

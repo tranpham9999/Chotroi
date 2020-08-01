@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@color/colorAccent">-->
+<!--                <androidx.appcompat.widget.SearchView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/searchView"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    app:defaultQueryHint="true"-->
+<!--                    app:queryHint="Search here....."-->
+<!--                    android:background="@color/colorTextLight"-->
+<!--                    >-->
+
+<!--                </androidx.appcompat.widget.SearchView>-->
+<!--        </LinearLayout>-->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <ViewFlipper
+                            android:id="@+id/viewFlipper"
+                            android:layout_width="match_parent"
+                            android:background="@color/colorline"
+                            android:layout_height="150dp">
+
+                        </ViewFlipper>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_weight="8"
+                            android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+                                        <Button
+                                            android:id="@+id/btSmartphone"
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:drawableTop="@drawable/ic_smartphone_indigo_400_24dp"
+                                            android:text="Smartphone"
+                                            android:textSize="10dp"
+                                            android:textAllCaps="false"
+                                            android:background="@color/colorTextLight"
+                                            android:padding="10dp"/>
+                                        <Button
+                                            android:id="@+id/btLaptop"
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:drawableTop="@drawable/ic_laptop_windows_indigo_400_24dp"
+                                            android:text="Laptop"
+                                            android:textSize="10dp"
+                                            android:textAllCaps="false"
+                                            android:background="@color/colorTextLight"
+                                            android:padding="10dp"/>
+                                        <Button
+                                            android:id="@+id/btCamera"
+                                            android:layout_weight="1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:drawableTop="@drawable/ic_photo_camera_indigo_400_24dp"
+                                            android:text="Camera"
+                                            android:textSize="10dp"
+                                            android:textAllCaps="false"
+                                            android:background="@color/colorTextLight"
+                                            android:padding="10dp"/>
+
+                                </LinearLayout>
+                                <!--                        <LinearLayout-->
+                                <!--                            android:layout_width="match_parent"-->
+                                <!--                            android:layout_height="wrap_content"-->
+                                <!--                            android:layout_weight="4">-->
+                                <!--                                <Button-->
+                                <!--                                    android:layout_weight="1"-->
+                                <!--                                    android:layout_width="wrap_content"-->
+                                <!--                                    android:layout_height="match_parent"-->
+                                <!--                                    android:drawableTop="@drawable/ic_smartphone_indigo_400_24dp"-->
+                                <!--                                    android:text="Smartphone"-->
+                                <!--                                    android:textAllCaps="false"/>-->
+                                <!--                                <Button-->
+                                <!--                                    android:layout_weight="1"-->
+                                <!--                                    android:layout_width="wrap_content"-->
+                                <!--                                    android:layout_height="match_parent" />-->
+                                <!--                                <Button-->
+                                <!--                                    android:layout_weight="1"-->
+                                <!--                                    android:layout_width="wrap_content"-->
+                                <!--                                    android:layout_height="match_parent" />-->
+                                <!--                                <Button-->
+                                <!--                                    android:layout_weight="1"-->
+                                <!--                                    android:layout_width="wrap_content"-->
+                                <!--                                    android:layout_height="match_parent" />-->
+                                <!--                        </LinearLayout>-->
+
+                        </LinearLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycleview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

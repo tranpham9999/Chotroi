@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTextviewProfile">#000000</color>
+    <color name="colorPrimary">#0099FF</color>
+    <color name="colorPrimaryDark">#009BFF</color>
+    <color name="colorAccent">#0099FF</color>
+    <color name="colorline">#8F8F8F</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="colorTextLight">#FFFFFF</color>
+    <color name="grayLight">#FAFAFA</color>
+    <color name="startBlue">#184785</color>
+    <color name="endBlue">#00B2BF</color>
+    <color name="mauxam">#C0BFBF</color>
+    <color name="start_blue">#184785</color>
+    <color name="end_blue">#426EB4</color>
+    <color name="button">#426EB4</color>
+    <color name="BackgroundtWhiteColor">#FFFFFF</color>
+
+</resources>

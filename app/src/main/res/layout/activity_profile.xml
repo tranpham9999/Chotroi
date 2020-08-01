@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llTop">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/gradientbackground">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvatar_viewprofile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvTenngdung_viewprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgAvatar_viewprofile"
+                    android:paddingTop="90dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="21sp"
+                    android:text="Trần Nguyễn Thành Phẫm"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvDc_viewprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTenngdung_viewprofile"
+                    android:layout_toRightOf="@+id/imgAvatar_viewprofile"
+                    android:paddingLeft="20dp"
+                    android:text="Đang ở"
+                    android:textColor="@color/colorTextLight"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/tvDiachi_viewprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTenngdung_viewprofile"
+                    android:layout_toRightOf="@+id/tvDc_viewprofile"
+                    android:text="Gò vấp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorTextLight"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/tvDanhgia_viewprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDiachi_viewprofile"
+                    android:layout_toRightOf="@id/imgAvatar_viewprofile"
+                    android:layout_marginLeft="20dp"
+                    android:text="Đánh giá"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorTextLight"
+                    android:textAllCaps="false"
+                    android:padding="5dp"
+                    android:background="@drawable/textview_border"/>
+                <RatingBar
+                    android:id="@+id/Ratingbar_viewprofile"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDiachi_viewprofile"
+                    android:layout_toRightOf="@id/tvDanhgia_viewprofile"
+                    android:numStars="5"
+                    android:isIndicator="true"
+                    android:stepSize="0.5"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#D7D7D7"
+                android:layout_margin="5dp"
+                android:id="@+id/llDangban_profile">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đang bán"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvSoluongdangban_Profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="0"
+                    android:textColor="@color/startBlue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="#D7D7D7"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:id="@+id/llDaban_profile"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Đã bán"-->
+<!--                    android:textSize="20sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvSoluongdaban_Profile"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:text="0"-->
+<!--                    android:textColor="@color/startBlue"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llTop"
+        android:id="@+id/fragment_container_profile">
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/framtoolbar2">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/CustomActionBar"
+            android:id="@+id/toolbar_profile"
+            android:background="@color/colorAccent">
+
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+
+
+</RelativeLayout>

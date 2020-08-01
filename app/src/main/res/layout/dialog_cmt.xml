@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:gravity="center"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write a comment"
+        android:padding="5dp"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp"
+        app:met_minCharacters="0"
+        app:met_maxCharacters="500"
+        android:layout_margin="5dp"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:gravity="top|left"
+        android:scrollbars="vertical"
+        />
+
+    <Button
+        android:id="@+id/btXong"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_custom"
+        android:text="Xong"
+        android:textColor="@android:color/white">
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectItem"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/framtoolbar1">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/CustomActionBar"
+            android:id="@+id/toolbar_selectitem"
+            android:background="@color/colorPrimary">
+
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Scrollview"
+        android:layout_below="@+id/framtoolbar1"
+        android:layout_above="@+id/frameContact"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imgXampleimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@color/cardview_dark_background"></ImageView>
+
+                <TextView
+                    android:id="@+id/etTensanpham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgXampleimg"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Macbook"
+                    android:textColor="@color/colorTextviewProfile"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/etGiasanpham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etTensanpham"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:text="700.000 Đ"
+                    android:textColor="@color/colorTextviewProfile"
+                    android:textSize="30dp"></TextView>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.25dp"
+                    android:layout_below="@+id/etGiasanpham"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorline"></View>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.25dp"
+                    android:layout_below="@+id/iconTinhtrang"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorline"></View>
+
+                <ImageView
+                    android:id="@+id/iconLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_location_on_black_18dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/iconLocation"
+                    android:text="Thủ Đức">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvLoaisp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLocation"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/iconLoaisp"
+                    android:text="Laptop">
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/iconLoaisp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iconLocation"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_apps_black_18dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tvTinhtrang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLoaisp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/iconTinhtrang"
+                    android:text="Mới">
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/iconTinhtrang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iconLoaisp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_info_outline_black_18dp">
+
+                </ImageView>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image_banhang"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/line2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/dell"
+                    app:civ_border_color="#FF0000"
+                    app:civ_border_width="0.25dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/tvUserBanhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line2"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/profile_image_banhang"
+                    android:text="Tao ban hang"
+                    android:textColor="@color/colorTextviewProfile"
+                    android:textSize="15dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvChitietsanpham"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_image_banhang"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#F3E5E5"
+                    android:maxLines="15"
+                    android:minLines="5"
+                    android:padding="10dp"
+                    android:text="Intel core i5, 1080ti, 1TB SSD \n Full hd IPS \n pin 69cells">
+
+                </TextView>
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.25dp"
+                    android:layout_below="@+id/tvChitietsanpham"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorline"></View>
+
+                <TextView
+                    android:id="@+id/tvComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line4"
+                    android:padding="10dp"
+                    android:text="Comment"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/imageButtonComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line4"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_mode_edit_black_24dp"
+                    android:padding="10dp">
+
+                </ImageButton>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleview_Comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvComment">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:id="@+id/tvCmt"-->
+                <!--                        android:text="Comment"-->
+                <!--                        android:textSize="15dp"-->
+                <!--                        android:layout_below="@id/tvChitietsanpham"-->
+                <!--                        android:padding="20dp">-->
+
+                <!--                    </TextView>-->
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:id="@+id/frameContact">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"
+                android:text="Call">
+
+            </Button>
+            <Button
+                android:id="@+id/btSMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"
+                android:text="SMS">
+
+            </Button>
+            <Button
+                android:id="@+id/btChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"
+                android:text="Chat">
+
+            </Button>
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>

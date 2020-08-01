@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Dangnhap">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibGoback_taotk"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_arrow_back_white_24dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentLeft="true">
+    </ImageButton>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextHint"
+                android:id="@+id/tilHovaten">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etHovaten"
+                    android:hint="Họ và tên"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/colorTextLight"
+                    android:textColor="@color/colorTextLight">
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tilNgaysinh"
+                android:layout_below="@+id/tilHovaten"
+                android:theme="@style/EditTextHint"
+                android:paddingRight="90dp">
+
+                <EditText
+                    android:id="@+id/etNgaysinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ngày sinh"
+                    android:inputType="datetime"
+                    android:textColor="@color/colorTextLight"
+                    android:textColorHint="@color/colorTextLight"></EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btSelectday"
+                android:text="Select day"
+                android:layout_toRightOf="@+id/tilNgaysinh"
+                android:layout_below="@+id/tilHovaten"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="0dp">
+
+            </Button>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tilUsername"
+                android:theme="@style/EditTextHint"
+                android:layout_below="@+id/tilNgaysinh">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etUsername"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/colorTextLight"
+                    android:textColor="@color/colorTextLight">
+
+                </EditText>
+             </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tilPassword"
+                android:layout_below="@+id/tilUsername"
+                android:theme="@style/EditTextHint"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etPassword"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorTextLight"
+                    android:textColor="@color/colorTextLight">
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tilComfirmpassword"
+                android:layout_below="@+id/tilPassword"
+                android:theme="@style/EditTextHint"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etComfirmpassword"
+                    android:hint="Comfirm Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorTextLight"
+                    android:textColor="@color/colorTextLight">
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loading"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_below="@+id/btRegister"
+                android:visibility="gone">
+
+            </ProgressBar>
+
+
+            <Button
+                android:id="@+id/btRegister"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilComfirmpassword"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:background="#FF6666"
+                android:textAllCaps="true"
+                android:text="đăng ký">
+
+            </Button>
+
+    </RelativeLayout>
+</RelativeLayout>
